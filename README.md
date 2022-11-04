@@ -16,6 +16,8 @@ Download theme [here.](https://github.com/witalihirsch/Mono-firefox-theme/releas
 2. Application Basics > Profile Directory > `Open Directory`.
 3. Create a `chrome` directory if it doesn't exist or remove/move all files in `chrome` derectory if they exist.
 4. Put `mono-firefox-theme`, `userChrome.css`, `userContent.css` in chrome folder.
+5. Set `toolkit.legacyUserProfileCustomizations.stylesheets` in `about:config` to `true`.
+6. Restart Firefox.
 
 ## Using
 To switching the light or dark theme use [Night Theme Switcher](https://extensions.gnome.org/extension/2236/night-theme-switcher/) (choose the `MonoTheme` for day and `MonoThemeDark` for night variant in the `Themes` tab and change the theme color by switching style in Settings > `Appearance`).

@@ -253,8 +253,8 @@ tab {
     border: 0px solid transparent;
     box-sizing: content-box;
     /* Avoid deformation on flexbox */
-    border-radius: 99px !important;
-    padding: 4px !important;
+    border-radius: 6px !important;
+    padding: 2px !important;
     background-size: 24px;
     transition: all 0.2s ease-out !important;
 }

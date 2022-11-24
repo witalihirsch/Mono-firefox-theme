@@ -88,7 +88,7 @@ spacer[part=overflow-end-indicator] {
 /* Tabsbar buttons */
 #TabsToolbar .toolbarbutton-1:not(#hack) {
     border-radius: 6px !important;
-    margin: 5px 3px 6px !important;
+    margin: 0px 3px 7px !important;
     padding: 0 9px !important;
 }
 
@@ -124,7 +124,7 @@ spacer[part=overflow-end-indicator] {
 /* Tab */
 .tabbrowser-tab {
     border: 0 !important;
-    padding: 5px 3px 6px !important;
+    padding: 0px 3px 7px !important;
     position: relative;
 }
 
@@ -312,7 +312,7 @@ tab {
     fill-opacity: 1 !important;
     -moz-context-properties: fill, fill-opacity !important;
     height: 16px !important;
-    margin-right: 0 !important;
+    margin-right: 3px !important;
     opacity: 1 !important;
     width: 16px !important;
     z-index: 100 !important;

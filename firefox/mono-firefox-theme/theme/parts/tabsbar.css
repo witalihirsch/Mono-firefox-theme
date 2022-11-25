@@ -147,7 +147,7 @@ spacer[part=overflow-end-indicator] {
     border-left: 1px solid var(--gnome-tabbar-tab-separator-color) !important;
     height: 26px;
     position: absolute;
-    top: 9px;
+    top: 5px;
 }
 
 .tabbrowser-tab::after {

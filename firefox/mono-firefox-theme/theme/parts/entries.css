@@ -25,6 +25,22 @@
     box-sizing: border-box;
 }
 
+/* Entries hover */
+#urlbar:hover,
+#searchbar:hover,
+#search-box[focused],
+.findbar-textbox[focused],
+.findbar-textbox:hover,
+#loginTextbox:hover,
+#password1Textbox:hover,
+.tabsFilter[focused],
+#editBMPanel_namePicker:hover,
+#editBMPanel_tagsField:hover {
+    outline: 1px solid var(--gnome-hover-urlbar-border-color) !important;
+    outline-offset: -2px;
+    -moz-outline-radius: 5px;
+}
+
 /* Entries focused */
 #urlbar[breakout][breakout-extend],
 #urlbar[focused="true"]:not([suppress-focus-border]),

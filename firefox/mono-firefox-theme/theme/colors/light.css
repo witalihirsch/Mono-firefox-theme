@@ -66,6 +66,7 @@
     --gnome-entry-background: rgba(40, 40, 40, 0.05);
     --gnome-entry-color: #252525;
     --gnome-inactive-entry-color: rgba(40, 40, 40, 0.5);
+    --gnome-hover-urlbar-border-color: rgba(40, 40, 40, 0.1);
     --gnome-focused-urlbar-border-color: rgba(40, 40, 40, 0.2);
 
     /* Switch */

@@ -154,6 +154,15 @@ spacer[part=overflow-end-indicator] {
     right: -.5px;
 }
 
+/* Tabs manager menu */
+#alltabs-button {
+    visibility: collapse;
+}
+
+#tabbrowser-tabs[overflow="true"]~#alltabs-button {
+    visibility: visible;
+}
+
 /* Tab labels */
 tab {
     color: var(--gnome-toolbar-color) !important;

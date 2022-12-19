@@ -90,6 +90,11 @@
     fill-opacity: 0.8 !important;
 }
 
+.urlbar-page-action,
+.urlbar-icon {
+    margin-bottom: 5px;
+}
+
 .identity-box-button:hover:not([open="true"]),
 #tracking-protection-icon-container:hover:not([open="true"]),
 #notification-popup-box:hover:not([open="true"]),

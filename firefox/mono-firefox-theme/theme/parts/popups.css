@@ -184,7 +184,7 @@ menupopup menu,
     border-radius: 6px !important;
     color: var(--gnome-toolbar-color) !important;
     font: menu !important;
-    padding: 4px 12px !important;
+    padding: 1px 5px !important;
     min-height: 32px !important;
 }
 

@@ -9,6 +9,7 @@
 
 /* Toolbox colors */
 #navigator-toolbox {
+    --lwt-tabs-border-color: transparent !important;
     border: 0 !important;
     background: none !important;
 }

@@ -26,6 +26,7 @@
 /* Tabs bar height */
 #tabbrowser-tabs,
 #tabbrowser-tabs arrowscrollbox {
+    --lwt-tab-line-color: transparent !important;
     height: auto !important;
     min-height: auto !important;
     --tab-min-height: 34px !important;

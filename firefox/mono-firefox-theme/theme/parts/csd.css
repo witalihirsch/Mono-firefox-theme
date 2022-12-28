@@ -16,7 +16,7 @@
 (-moz-gtk-csd-maximize-button),
 (-moz-gtk-csd-close-button) {
     :root {
-        --gnome-navbar-csd-offset: 50px;
+        --gnome-navbar-csd-offset: 43px;
     }
 }
 
@@ -25,14 +25,14 @@
 (-moz-gtk-csd-minimize-button) and (-moz-gtk-csd-close-button),
 (-moz-gtk-csd-maximize-button) and (-moz-gtk-csd-close-button) {
     :root {
-        --gnome-navbar-csd-offset: 90px;
+        --gnome-navbar-csd-offset: 80px;
     }
 }
 
 /* Window buttons: 3 buttons */
 @media (-moz-gtk-csd-minimize-button) and (-moz-gtk-csd-maximize-button) and (-moz-gtk-csd-close-button) {
     :root {
-        --gnome-navbar-csd-offset: 130px;
+        --gnome-navbar-csd-offset: 100px;
     }
 }
 
@@ -76,7 +76,11 @@
 }
 
 /* Force the restore button to appear regardless of maximize button's status */
-:root[tabsintitlebar][inFullscreen] #titlebar .titlebar-buttonbox-container .titlebar-restore {
+:root[tabsintitlebar][inFullscreen] #titlebar .titlebar-buttonbox-container {
+    visibility: visible !important;
+}
+
+:root[tabsintitlebar][inFullscreen]:not([inDOMFullscreen]) #titlebar .titlebar-buttonbox-container .titlebar-restore {
     display: inherit !important;
 }
 
@@ -126,6 +130,7 @@
     -moz-appearance: none !important;
     padding: 0 2px !important;
     background: var(--gnome-button-titlebar-background);
+    transition: 0.2s;
 }
 
 :root[tabsintitlebar] #titlebar .titlebar-button {

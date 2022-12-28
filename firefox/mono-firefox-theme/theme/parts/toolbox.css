@@ -21,6 +21,7 @@
 findbar {
     border: 0 !important;
     background: var(--gnome-toolbar-background) !important;
+    appearance: none !important;
 }
 
 #nav-bar,
@@ -78,11 +79,11 @@ findbar:-moz-window-inactive description,
 }
 
 #navigator-toolbox #PersonalToolbar {
-    -moz-box-ordinal-group: 1;
+    -moz-box-ordinal-group: 0;
 }
 
 #navigator-toolbox #titlebar {
-    -moz-box-ordinal-group: 2;
+    -moz-box-ordinal-group: 1;
 }
 
 #navigator-toolbox toolbar {

@@ -26,9 +26,19 @@
     display: -moz-box !important;
 }
 
+/* Fix unified-extensions-item margin */
+toolbar .unified-extensions-item {
+    margin-inline: 0 3px !important;
+}
+
 /* menulist */
 #label-box:not([native]) {
     font-weight: 400 !important;
+    padding: 0 8px;
+}
+
+dropmarker:not([native]) {
+    margin-right: 8px;
 }
 
 /* Overrides: Make the back button the same as other buttons */

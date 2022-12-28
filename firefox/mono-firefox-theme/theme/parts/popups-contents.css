@@ -199,11 +199,6 @@
     padding: 0 !important;
 }
 
-#permission-popup-mainView {
-    min-width: unset !important;
-    max-width: unset !important;
-}
-
 .permission-popup-permission-item:first-child,
 #permission-popup-storage-access-permission-list-header {
     margin-top: 0 !important;
@@ -260,7 +255,6 @@
 
 #protections-popup-mainView-panel-header {
     color: var(--gnome-toolbar-color) !important;
-    padding: 0 !important;
 }
 
 #protections-popup[hasException] #protections-popup-mainView-panel-header {
@@ -280,7 +274,7 @@
 
 #protections-popup[toast] #protections-popup-mainView-panel-header {
     border-bottom-width: 1px !important;
-    border-radius: 5px !important;
+    border-radius: 6px !important;
     padding: 0px !important;
 }
 
@@ -288,32 +282,30 @@
     margin: 0 !important;
 }
 
-#messaging-system-message-container {
-    height: 120px !important;
-    border: 0 !important;
-}
-
-#protections-popup #messaging-system-message-container[disabled] {
-    margin-bottom: -120px !important;
-}
-
 #protections-popup-message {
-    background: none !important;
+    background-position: center 12px !important;
+    background-color: var(--gnome-entry-background);
     border: 0 !important;
+    border-radius: 12px;
     color: var(--gnome-toolbar-color) !important;
     height: 100% !important;
     margin: 0 !important;
 }
 
-#protections-popup-message .text-link {
+#protections-popup-message .text-link,
+#cfr-protections-panel-link-text {
     color: var(--gnome-toolbar-color) !important;
+}
+
+.whatsNew-message-body {
+    padding: 0 6px;
 }
 
 #protections-popup-tp-switch-section {
     background: var(--gnome-menu-background);
     border: 1px solid var(--gnome-button-border-color) !important;
     border-radius: 9px;
-    padding: 12px 16px !important;
+    padding: 12px 8px !important;
     margin: 0 !important;
 }
 
@@ -327,7 +319,7 @@
 }
 
 #protections-popup-no-trackers-found-description {
-    margin: 12px 12px 0 !important;
+    margin: 12px 8px 0 !important;
     text-align: left !important;
 }
 
@@ -370,10 +362,8 @@
     height: 32px !important;
 }
 
-#protections-popup-trackers-blocked-counter-box,
 #protections-popup-footer-protection-type-label {
-    margin: 0 !important;
-    margin-inline: 0 !important;
+    margin-left: 6px !important;
 }
 
 .protections-popup-description {
@@ -391,5 +381,5 @@
 
 /* Extensions sometimes assume a white background */
 .webextension-popup-browser {
-    background-color: #ffffff !important;
+    background-color: #fff !important;
 }

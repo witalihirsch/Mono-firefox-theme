@@ -7,11 +7,14 @@ menupopup {
     -moz-appearance: none !important;
     color: var(--gnome-toolbar-color) !important;
     padding: 8px !important;
-    margin: -8px !important;
 }
 
 menu menupopup {
-    margin-top: -16px !important;
+    margin: -13px 0px 0px 0px !important;
+}
+
+menulist {
+    padding: 0px !important;
 }
 
 .menupopup-arrowscrollbox {
@@ -65,10 +68,8 @@ panel {
 .panel-header,
 .panel-footer,
 .panel-subview-body,
-.protections-popup-section,
 #protections-popup-mainView-panel-header-section,
 .permission-popup-section,
-.identity-popup-section,
 .popup-notification-header-container,
 .popup-notification-body-container,
 .popup-notification-footer-container {
@@ -87,6 +88,11 @@ panel {
     padding-top: var(--gnome-menu-padding) !important;
 }
 
+#protections-popup-footer,
+#identity-popup-clear-sitedata-footer {
+    padding: 0 var(--gnome-menu-padding) !important;
+}
+
 .panel-subview-body>.panel-subview-body {
     padding: 0 !important;
 }
@@ -102,10 +108,6 @@ panel {
 
 .subviewbutton.panel-subview-footer-button:not(:only-child, #downloadsHistory):last-child {
     margin-bottom: var(--gnome-menu-padding) !important;
-}
-
-#identity-popup-security-button {
-    margin: 0 var(--gnome-menu-padding) !important;
 }
 
 /* No menu */
@@ -173,8 +175,8 @@ panel {
 /* Menu buttons */
 menuitem,
 menupopup menu,
-.subviewbutton:not(#appMenu-fxa-label2),
-.toolbarbutton-1,
+panelview .subviewbutton:not(#appMenu-fxa-label2),
+panelview .toolbarbutton-1,
 .protections-popup-footer-button,
 .protections-popup-category,
 .identity-popup-content-blocking-category,
@@ -184,7 +186,7 @@ menupopup menu,
     border-radius: 6px !important;
     color: var(--gnome-toolbar-color) !important;
     font: menu !important;
-    padding: 1px 8px !important;
+    padding: 4px 12px !important;
     min-height: 32px !important;
 }
 
@@ -300,7 +302,6 @@ toolbarseparator[orient="vertical"] {
 }
 
 panelview>toolbarseparator:not([orient="vertical"]),
-#identity-popup-clear-sitedata-footer toolbarseparator:not([orient="vertical"]),
 #identity-popup-more-info-footer toolbarseparator:not([orient="vertical"]) {
     margin: 6px !important;
 }

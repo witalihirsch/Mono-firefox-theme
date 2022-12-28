@@ -55,10 +55,12 @@ button.close,
     outline: 0 !important;
     font: menu !important;
     -moz-box-align: center !important;
+    transition: 0.3s;
 }
 
 .subviewbutton-iconic {
     -moz-box-pack: center !important;
+	transition: 0.3s;
 }
 
 /* Flat Buttons */
@@ -68,6 +70,7 @@ button.close,
 #protections-popup-info-button,
 .permission-popup-permission-remove-button {
     background: transparent !important;
+    transition: 0.3s;
 }
 
 /* Buttons with margins */
@@ -257,7 +260,8 @@ button.close:active,
 }
 
 /* Combined buttons */
-#appMenu-popup .toolbaritem-combined-buttons toolbarbutton:not(:last-of-type):not(#appMenu-zoomEnlarge-button),
+
+#appMenu-popup .toolbaritem-combined-buttons:not(.unified-extensions-item) toolbarbutton:not(:last-of-type):not(#appMenu-zoomEnlarge-button),
 #context-navigation menuitem:not(:last-of-type),
 .findbar-container toolbarbutton.findbar-find-previous,
 .findbar-button:not(:last-of-type),
@@ -268,7 +272,8 @@ button.close:active,
     margin-right: 0 !important;
 }
 
-#appMenu-popup .toolbaritem-combined-buttons toolbarbutton:not(:first-of-type):not(#appMenu-fullscreen-button),
+#nav-bar .toolbaritem-combined-buttons:not(.unified-extensions-item) toolbarbutton:not(:first-of-type):not(#hack),
+#appMenu-popup .toolbaritem-combined-buttons:not(.unified-extensions-item) toolbarbutton:not(:first-of-type):not(#appMenu-fullscreen-button),
 #context-navigation menuitem:not(:first-of-type),
 .findbar-container toolbarbutton.findbar-find-previous,
 .findbar-container toolbarbutton.findbar-find-next,
@@ -279,7 +284,7 @@ button.close:active,
     margin-left: 0 !important;
 }
 
-#nav-bar .toolbaritem-combined-buttons {
+#nav-bar .toolbaritem-combined-buttons:not(.unified-extensions-item) {
     margin-left: 0 !important;
     margin-right: 0 !important;
 }

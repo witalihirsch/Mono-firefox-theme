@@ -27,6 +27,7 @@ window {
 .dialogBox {
     border-radius: 12px !important;
     margin-top: 0 !important;
+    outline: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 window[role="dialog"] {
@@ -37,7 +38,8 @@ window[role="dialog"] {
 }
 
 dialog {
-    padding: 0 !important;
+    padding: 6px !important;
+    padding-top: 10px !important;
 }
 
 /* Content */
@@ -62,7 +64,7 @@ dialog {
     height: auto !important;
     max-height: unset !important;
     padding: 10px 14px !important;
-    margin: 5px !important;
+    margin: 0px !important;
     margin-top: 0 !important;
     border-radius: 6px !important;
     flex: 1;
@@ -71,11 +73,11 @@ dialog {
 
 /* Buttons borders - only suppor for cancel/ok */
 .dialog-button-box button[dlgtype="accept"] {
-    margin-left: 0px !important;
+    margin-left: 3px !important;
 }
 
 .dialog-button-box button[dlgtype="cancel"]:not(#hack) {
-    margin-right: 0px !important;
+    margin-right: 3px !important;
 }
 
 /* Hadler dialog */

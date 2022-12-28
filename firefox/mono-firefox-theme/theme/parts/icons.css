@@ -53,7 +53,12 @@ button.close::before,
     -moz-context-properties: fill, fill-opacity;
 }
 
-.toolbarbutton-icon:-moz-window-inactive {
+.toolbarbutton-icon:-moz-window-inactive,
+:root[tabsintitlebar] #titlebar .titlebar-buttonbox .titlebar-close:-moz-window-inactive .toolbarbutton-icon,
+:root[tabsintitlebar] #titlebar .titlebar-buttonbox .titlebar-max .toolbarbutton-icon:-moz-window-inactive,
+:root[tabsintitlebar] #titlebar .titlebar-buttonbox .titlebar-restore .toolbarbutton-icon:-moz-window-inactive,
+:root[tabsintitlebar] #titlebar .titlebar-buttonbox .titlebar-min .toolbarbutton-icon:-moz-window-inactive,
+:root[tabsintitlebar][inFullscreen] #window-controls #restore-button .toolbarbutton-icon {
     fill: var(--gnome-inactive-toolbar-icon-fill) !important;
 }
 
@@ -94,7 +99,7 @@ treechildren::-moz-tree-image(selected, focus, open),
 .item.client:focus .item-twisty-container,
 .sidebar-panel[lwt-sidebar-brighttext] .sidebar-placesTreechildren::-moz-tree-twisty,
 .sidebar-panel[lwt-sidebar-brighttext] .sidebar-placesTreechildren::-moz-tree-twisty(open) {
-    fill: #ffffff !important;
+    fill: #fff !important;
 }
 
 /* Fix flat buttons icons aproach */
@@ -216,21 +221,21 @@ arrowscrollbox[orient="horizontal"] {
 /* Tree views */
 treechildren::-moz-tree-twisty,
 .item.client .item-twisty-container {
-    list-style-image: url("../icons/pan-down-symbolic.svg") !important;
+    list-style-image: url("../icons/pan-end-symbolic.svg") !important;
     width: 16px !important;
     height: 16px !important;
 }
 
 .item.client .item-twisty-container {
-    background-image: url("../icons/pan-down-symbolic.svg") !important;
+    background-image: url("../icons/pan-end-symbolic.svg") !important;
 }
 
 treechildren::-moz-tree-twisty(open) {
-    list-style-image: url("../icons/pan-end-symbolic.svg") !important;
+    list-style-image: url("../icons/pan-down-symbolic.svg") !important;
 }
 
 .item.client.closed .item-twisty-container {
-    background-image: url("../icons/pan-end-symbolic.svg") !important;
+    background-image: url("../icons/pan-down-symbolic.svg") !important;
 }
 
 treechildren::-moz-tree-image(title, container),
@@ -288,7 +293,7 @@ button.close::before {
 
 @media (prefers-color-scheme: light) {
     .notificationbox-stack notification[type="critical"] .close-icon:not(.tab-close-button):not(:hover) {
-        fill: #ffffff !important;
+        fill: #fff !important;
     }
 }
 
@@ -311,6 +316,10 @@ button.close::before {
     list-style-image: url("../icons/window-restore-symbolic.svg") !important;
 }
 
+:root[tabsintitlebar][inFullscreen] #titlebar .titlebar-buttonbox .titlebar-restore .toolbarbutton-icon {
+    list-style-image: url("../icons/view-restore-symbolic.svg") !important;
+}
+
 :root[tabsintitlebar] #titlebar .titlebar-buttonbox .titlebar-min .toolbarbutton-icon {
     list-style-image: url("../icons/window-minimize-symbolic.svg") !important;
 }
@@ -326,6 +335,11 @@ button.close::before {
 
 .tab-icon-overlay[muted] {
     list-style-image: url("../icons/audio-muted-symbolic.svg") !important;
+}
+
+/* Firefox View */
+#firefox-view-button {
+    list-style-image: url("../icons/firefox-symbolic.svg") !important;
 }
 
 /* Private browsing button */
@@ -460,7 +474,7 @@ button.close::before {
 }
 
 #star-button[starred] {
-    fill: var(--gnome-accent) !important;
+    fill: var(--gnome-toolbar-star-button) !important;
 }
 
 /* History button */
@@ -560,7 +574,7 @@ button.close::before {
 }
 
 #identity-popup[connection^="secure"] .identity-popup-security-connection {
-    background-image: url("../icons/padlock-symbolic.svg") !important;
+    list-style-image: url("../icons/padlock-symbolic.svg") !important;
 }
 
 #identity-box[pageproxystate="valid"].notSecure #identity-icon,
@@ -570,7 +584,7 @@ button.close::before {
 }
 
 .identity-popup-security-connection {
-    background-image: url("../icons/padlock-insecure-symbolic.svg") !important;
+    list-style-image: url("../icons/padlock-insecure-symbolic.svg") !important;
 }
 
 #permissions-granted-icon {

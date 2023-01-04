@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="16" height="16" enable-background="new" version="1.1" xmlns="http://www.w3.org/2000/svg">
     <title>Gnome Symbolic Icons</title>
-    <g transform="translate(-152.01 -952)">
-        <path d="m166 957-5.9941 6-6.0059-6z" fill="context-fill" stroke="context-stroke" fill-opacity="context-fill-opacity" stroke-opacity="context-stroke-opacity"/>
-    </g>
+        <path d="M8 11C8.43083 10.994 8.7603 10.8494 9.11511 10.5181L13.6325 6.10844C13.8859 5.86748 14 5.59639 14 5.25302C14 4.56627 13.4108 4 12.7012 4C12.34 4 12.0042 4.13855 11.7318 4.40964L8.01267 8.1024L4.27452 4.40964C4.00212 4.14458 3.66629 4 3.29892 4C2.5892 4 2 4.56627 2 5.25302C2 5.59037 2.12034 5.86144 2.36754 6.10844L6.8912 10.5181C7.24606 10.8554 7.58189 11 8 11Z" color="#000" overflow="visible" fill="context-fill" stroke="context-stroke" fill-opacity="context-fill-opacity" stroke-opacity="context-stroke-opacity"/>
 </svg>

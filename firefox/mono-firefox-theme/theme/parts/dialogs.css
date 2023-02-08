@@ -43,8 +43,10 @@ dialog {
 }
 
 /* Content */
+.box-inherit[part="content-box"],
 .dialog-content-box {
-    padding: 24px;
+    padding: 12px;
+    padding-bottom: 0;
 }
 
 #titleContainer {

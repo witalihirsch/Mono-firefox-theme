@@ -354,7 +354,8 @@
     margin-top: 12px;
 }
 
-#protections-popup-show-report-stack {
+#protections-popup-show-report-stack,
+#protections-popup-settings-button {
     width: 100% !important;
 }
 

@@ -439,6 +439,7 @@ button.close::before {
 }
 
 /* Addons button */
+#unified-extensions-button,
 #add-ons-button,
 #addons-notification-icon,
 .install-icon {

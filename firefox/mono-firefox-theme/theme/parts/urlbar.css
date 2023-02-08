@@ -7,6 +7,10 @@
     --urlbar-toolbar-height: 34.00px !important;
 }
 
+#urlbar-container {
+    --urlbar-container-height: 0 !important;
+}
+
 /* Center the URL bar */
 toolbarspring {
     max-width: 10000px !important;
@@ -20,6 +24,7 @@ toolbarspring {
 #urlbar-background {
     box-shadow: var(--gnome-entry-box-shadow) !important;
     border: 0 !important;
+    border-radius: 8px !important;
     background: transparent !important;
 }
 
@@ -38,8 +43,8 @@ toolbarspring {
 .urlbarView {
     background: transparent !important;
     color: var(--gnome-toolbar-color) !important;
-    margin: 11px 0 0 0 !important;
-    width: 99% !important;
+    margin: 11px 0 0 -3px !important;
+    width: 100% !important;
     position: absolute !important;
     box-shadow: var(--gnome-menu-shadow) !important;
     border-radius: 12px !important;
@@ -123,6 +128,15 @@ toolbarspring {
 .searchbar-search-button:hover:active .searchbar-search-icon {
     background-color: transparent !important;
     fill-opacity: 1 !important;
+}
+
+#urlbar .urlbar-icon {
+    margin: 0 !important;
+    height: 100% !important;
+}
+
+#notification-popup-box {
+    height: 100% !important;
 }
 
 /* Search mode indicator */

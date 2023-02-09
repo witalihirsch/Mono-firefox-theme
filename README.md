@@ -1,5 +1,19 @@
 # Mono Theme for Firefox
 
+## Support
+<div>
+    <a href="https://www.patreon.com/witalihirsch">
+        <img src="images/patreon.png" height="60px" >
+    </a>
+</div>
+
+## Mono Project Preview
+<div>
+    <a href="https://www.patreon.com/witalihirsch">
+        <img src="images/monoproject.png" height="120px" >
+    </a>
+</div> 
+
 ## Mono Project Preview
 [Mono Project Preview.](https://witalihirsch.github.io/mono.html) Work in progress.
 
@@ -7,9 +21,6 @@
 <p align="center">
   <img alt="apps" src="images/firefox.png">
 </p>
-
-## Support
-[My Patreon](https://www.patreon.com/witalihirsch)
 
 ## Download
 Download theme [here.](https://github.com/witalihirsch/Mono-firefox-theme/releases)

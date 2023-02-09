@@ -14,6 +14,8 @@
     </a>
 </div> 
 
+## Mono Theme for Firefox
+
 <p align="center"><b>Firefox</b></p>
 <p align="center">
   <img alt="apps" src="images/firefox.png">

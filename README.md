@@ -14,9 +14,6 @@
     </a>
 </div> 
 
-## Mono Project Preview
-[Mono Project Preview.](https://witalihirsch.github.io/mono.html) Work in progress.
-
 <p align="center"><b>Firefox</b></p>
 <p align="center">
   <img alt="apps" src="images/firefox.png">

@@ -55,12 +55,11 @@ button.close,
     outline: 0 !important;
     font: menu !important;
     -moz-box-align: center !important;
-    transition: 0.3s;
+    transition: background .3s;
 }
 
 .subviewbutton-iconic {
     -moz-box-pack: center !important;
-	transition: 0.3s;
 }
 
 /* Flat Buttons */
@@ -70,7 +69,7 @@ button.close,
 #protections-popup-info-button,
 .permission-popup-permission-remove-button {
     background: transparent !important;
-    transition: 0.3s;
+    transition: background .3s;
 }
 
 /* Buttons with margins */
@@ -260,7 +259,7 @@ button.close:active,
 }
 
 /* Combined buttons */
-
+#nav-bar .toolbaritem-combined-buttons:not(.unified-extensions-item) toolbarbutton:not(:last-of-type):not(#hack),
 #appMenu-popup .toolbaritem-combined-buttons:not(.unified-extensions-item) toolbarbutton:not(:last-of-type):not(#appMenu-zoomEnlarge-button),
 #context-navigation menuitem:not(:last-of-type),
 .findbar-container toolbarbutton.findbar-find-previous,

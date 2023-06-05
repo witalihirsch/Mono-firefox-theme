@@ -9,7 +9,7 @@
 
 ## Mono Project Preview
 <div>
-    <a href="https://witalihirsch.github.io/mono.html">
+    <a href="https://witalihirsch.github.io/websites/mono/">
         <img src="images/monoproject.png" width="300px" >
     </a>
 </div> 

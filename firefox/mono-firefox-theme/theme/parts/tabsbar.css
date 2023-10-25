@@ -385,27 +385,27 @@ tab {
 }
 
 /* Active tab */
-.tab-background[selected=true] {
+.tab-background[selected] {
     background: none !important;
     border-image: none !important;
 }
 
-.tab-background[selected=true] {
+.tab-background[selected] {
     background-color: var(--gnome-tabbar-tab-active-background) !important;
 }
 
 /* Tab hover */
-.tabbrowser-tab:hover>.tab-stack>.tab-background[selected=true] {
+.tabbrowser-tab:hover>.tab-stack>.tab-background[selected] {
     background-color: var(--gnome-tabbar-tab-active-hover-background) !important;
 }
 
-.tabbrowser-tab:hover>.tab-stack>.tab-background:not([selected=true]),
-#TabsToolbar[brighttext]>#tabbrowser-tabs>.tabbrowser-tab:hover>.tab-stack>.tab-background:not([selected=true]),
-#TabsToolbar[brighttext]>#tabbrowser-tabs>.tabbrowser-tab:hover>.tab-stack>.tab-background>.tab-line:not([selected=true]) {
+.tabbrowser-tab:hover>.tab-stack>.tab-background:not([selected]),
+#TabsToolbar[brighttext]>#tabbrowser-tabs>.tabbrowser-tab:hover>.tab-stack>.tab-background:not([selected]),
+#TabsToolbar[brighttext]>#tabbrowser-tabs>.tabbrowser-tab:hover>.tab-stack>.tab-background>.tab-line:not([selected]) {
     background-color: transparent !important;
 }
 
-.tabbrowser-tab:hover>.tab-stack>.tab-background:not([selected=true]) {
+.tabbrowser-tab:hover>.tab-stack>.tab-background:not([selected]) {
     background-color: var(--gnome-tabbar-tab-hover-background) !important;
     border-image: none !important;
 }
@@ -483,7 +483,7 @@ tab {
 /* OPTIONAL: Add more contrast to the active tab */
 @supports -moz-bool-pref("gnomeTheme.activeTabContrast") {
 
-    .tab-background[selected=true]:not(#hack),
+    .tab-background[selected]:not(#hack),
     :root:not(:-moz-window-inactive) .tabbrowser-tab:hover>.tab-stack>.tab-background:not(#hack) {
         background: var(--gnome-tabbar-tab-active-background-contrast) !important;
     }

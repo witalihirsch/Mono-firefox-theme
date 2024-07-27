@@ -7,10 +7,6 @@
     --urlbar-toolbar-height: 34.00px !important;
 }
 
-#urlbar-container {
-    --urlbar-container-height: 0 !important;
-}
-
 /* Center the URL bar */
 toolbarspring {
     max-width: 10000px !important;
